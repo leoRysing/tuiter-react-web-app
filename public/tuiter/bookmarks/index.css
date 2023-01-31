@@ -1,0 +1,126 @@
+@import "../styles.css";
+.wd-bookmark-title {
+    font-size: 20px;
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-family: 'Verdana';
+}
+
+.wd-handle {
+    font-size: 13px;
+    color: lightslategray;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+p {
+    color: white;
+    margin-top: 4px;
+    margin-left: 0px;
+    padding: 0px;
+    font-family: 'Verdana';
+    max-width: 506px;
+    margin-bottom: 12px;
+}
+
+.wd-post-picture {
+    width: 504px;
+    height: 264 px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-color: lightslategray;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0px;
+    margin-top: 12px;
+}
+
+.wd-post-description {
+    color: lightslategray;
+    font-family: Verdana;
+    font-size: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: lightslategray;
+    border: 1px;
+    border-style: solid;
+    width: 480px;
+    padding: 12px;
+    margin-top: -10px;
+}
+
+.wd-post-title {
+    color: white;
+}
+
+.wd-post-sub-block {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: rgb(47, 51, 54);
+    border: 2px 2px 2px 2px;
+}
+
+.wd-container {
+    display: flex;
+}
+
+.wd-unselected-icon {
+    color: lightslategray;
+    margin-right: 8px;
+}
+
+.wd-selected-icon {
+    color: red;
+    margin-right: 8px;
+}
+
+.wd-unselected-text {
+    color: lightslategray;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.wd-icon {
+    margin-right: 80px;
+    margin-left: 0px;
+}
+
+div {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.wd-avatar {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    margin-right: 12px;
+    clear: both;
+}
+
+.wd-helped {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.wd-div-no-margin {
+    margin: 0px;
+}
+
+.wd-account-name {
+    font-family: Verdana;
+    font-size: 15px;
+    color: white;
+}
+
+.wd-account-size {
+    font-size: 15px;
+}
+
+.wd-post-cont {
+    clear: none;
+}

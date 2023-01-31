@@ -1,0 +1,96 @@
+@import "../styles.css";
+.wd-search-bar {
+    width: 75%;
+    color: white;
+    background-color: darkslategray;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    border-width: 0;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+}
+
+.wd-search-icon {
+    color: lightslategray;
+    font-size: 24px;
+    position: absolute;
+    left: 42px;
+    top: 12px;
+}
+
+.wd-base-link {
+    padding-right: 16px;
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-start-left {
+    padding-left: 16px;
+}
+
+.wd-first-link {
+    font-size: 15px;
+    color: rgb(29, 161, 242);
+}
+
+.wd-first-link-border {
+    border-bottom: 5px rgb(29, 161, 242) solid;
+    width: fit-content;
+    padding-bottom: 12px;
+    margin-right: 16px;
+}
+
+.wd-settings-link {
+    right: 22px;
+    position: absolute;
+    font-size: 24px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(29, 161, 242);
+}
+
+.wd-suggested-topic {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 16px;
+    font-family: Verdana;
+}
+
+.wd-suggested-title {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-suggested-text {
+    font-size: 18px;
+    max-width: 85%;
+    color: white;
+}
+
+.wd-suggested-post {
+    font-size: 15px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: Verdana;
+    margin-top: 16px;
+    color: white;
+}
+
+.wd-post-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 22px;
+    position: relative;
+    top: 0;
+    object-fit: cover;
+}
+
+p {
+    margin-bottom: 5px;
+    padding: 0;
+    margin-top: 0px;
+}
