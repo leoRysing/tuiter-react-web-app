@@ -11,6 +11,17 @@ body {
     margin-right: 16px;
 }
 
+.wd-back {
+    margin-left: 16px;
+    color: white;
+    size: 15px;
+    font-family: Verdana;
+}
+
+.wd-back-space {
+    margin-bottom: 12px;
+}
+
 .wd-float-left {
     float: left;
 }
