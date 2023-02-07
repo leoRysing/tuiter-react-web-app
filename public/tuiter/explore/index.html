@@ -4,118 +4,307 @@
 <head>
     <!-- this is the head -->
     <title>React App - Home Page</title>
-    <link rel="stylesheet" href=index.css " />
-    <link
-      rel="stylesheet "
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css "
-    />
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+</head>
 
-  <body>
-    <i class="fa fa-search wd-search-icon " aria-hidden="true "></i>
-    <form>
-      <input
-        id="tuiter-searchbar "
-        class="wd-search-bar "
-        placeholder="Search Tuiter "
-      />
-      <a class="wd-settings-link " href="explore-settings.html "
-        ><i class="fa fa-gear "></i
-      ></a>
-    </form>
+<body>
+    <!-- Stuff -->
+    <div class="container wd-above-margin">
+        <div class="row">
+            <!-- Navi -->
+            <div class="col-2 - col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2">
+                <div class="list-group">
+                    <!-- Tuitter -->
+                    <li class="list-group-item">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <!-- Home -->
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-start align-items-center">
+                            <i class="fa fa-home wd-icons"></i>
+                            <span class="d-none d-xl-block">
+                            Home
+                        </span>
+                        </div>
+                    </li>
+                    <!-- Explore -->
+                    <li class="list-group-item active">
+                        <div class="d-flex flex-row justify-content-start align-items-center">
+                            <i class="fa fa-hashtag wd-icons"></i>
+                            <span class="d-none d-xl-block">
+                                Explore
+                            </span>
+                        </div>
+                    </li>
+                    <!-- Notifications -->
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-start align-items-center">
+                            <i class="fa fa-bell wd-icons"></i>
+                            <span class="d-none d-xl-block">
+                                Notifications
+                            </span>
+                        </div>
+                    </li>
+                    <!-- Messages -->
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-start align-items-center">
+                            <i class="fa fa-envelope wd-icons"></i>
+                            <span class="d-none d-xl-block">
+                                Messages
+                            </span>
+                        </div>
+                    </li>
+                    <!-- Bookmarks -->
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-start align-items-center">
+                            <i class="fa fa-bookmark wd-icons"></i>
+                            <span class="d-none d-xl-block">
+                                Bookmarks
+                            </span>
+                        </div>
+                    </li>
+                    <!-- Lists -->
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-start align-items-center">
+                            <i class="fa fa-list wd-icons"></i>
+                            <span class="d-none d-xl-block">
+                                Lists
+                            </span>
+                        </div>
+                    </li>
+                    <!-- Profile -->
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-start align-items-center">
+                            <i class="fa fa-user wd-icons"></i>
+                            <span class="d-none d-xl-block">
+                                Profile
+                            </span>
+                        </div>
+                    </li>
+                    <!-- More -->
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-start align-items-center">
+                            <i class="fa fa-ellipsis-h wd-icons"></i>
+                            <span class="d-none d-xl-block">
+                                More
+                            </span>
+                        </div>
+                    </li>
+                </div>
+                <div class="d-grid">
+                    <button type="button" class="btn btn-primary rounded-pill wd-button-top">
+                        Tuit
+                    </button>
+                </div>
+            </div>
 
-    <!-- component B -->
-    <!-- todo; put each into a box, with a bottom border; -->
-    <div class="wd-container wd-start-left ">
-      <div class="wd-first-link-border ">
-        <a class="wd-first-link " href="for-you.html ">For you</a>
-      </div>
-      <a class="wd-base-link " href="for-you.html ">Trending</a>
-      <a class="wd-base-link " href="for-you.html ">COVID-19</a>
-      <a class="wd-base-link " href="for-you.html ">News</a>
-      <a class="wd-base-link " href="for-you.html ">Sports</a>
-      <a class="wd-base-link " href="for-you.html ">Entertainment</a>
+            <!-- Explore Section -->
+            <div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
+                <div class="d-flex flex-row justify-content-start align-items-center mb-3">
+                    <form class="flex-fill">
+                        <div class="wd-form-floating">
+                            <i class="fa fa-search wd-search-icon" aria-hidden="true"></i>
+                            <input type="text" id="search" class="form-control rounded-pill d-inline-block wd-search" placeholder="Search Tuitter">
+                        </div>
+                    </form>
+                    <i class="fa fa-gear fa-xl wd-setting-icon"></i>
+                </div>
+
+                <!-- Tabs -->
+                <ul class="nav nav-tabs mb-1">
+                    <li class="nav-item">
+                        <a class="nav-link active">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Sports</a>
+                    </li>
+                    <li class="nav-item d-none d-md-inline">
+                        <a class="nav-link">Entertainment</a>
+                    </li>
+                </ul>
+
+                <img src="../assets/starship.jpeg" class="w-100">
+                <h2 class="wd-display fw-bold">SpaceX's Starship</h2>
+                <ul class="list-group wd-content-list">
+                    <li class="list-group-item rounded-0">
+                        <div class="d-flex flex-row justify-content-between align-items-start">
+                            <!-- Content -->
+                            <div>
+                                <p class="wd-smaller-margins text-muted">Web Development</p>
+                                <p class="fw-bold wd-smaller-margins">
+                                    ReactJS
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="text-muted fw-light"> - 2h</span>
+                                </p>
+                                <p class="fw-bold wd-smaller-margins wd-smaller-text">
+                                    React.JS is a component based front end library that makes it very easy to build Single Page Applications or SPAs</p>
+                            </div>
+                            <img src="../assets/react.png" class="rounded-2 wd-image">
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-between align-items-start">
+                            <!-- Content -->
+                            <div>
+                                <p class="fw-bold wd-smaller-margins">
+                                    JavaScript
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="text-muted fw-light"> - 2h</span>
+                                </p>
+                                <p class="fw-bold wd-smaller-margins wd-smaller-text">
+                                    Javascript is programming language that can run on browsers as well as desktops
+                                </p>
+                                <p class="wd-smaller-margins wd-smaller-text text-muted">123K Tweets</p>
+                            </div>
+                            <img src="../assets/js.png" class="rounded-2 wd-image">
+                        </div>
+
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-between align-items-start">
+                            <!-- Content -->
+                            <div>
+                                <p class="wd-smaller-margins text-muted">Web Development</p>
+                                <p class="fw-bold wd-smaller-margins">
+                                    jQuery
+                                </p>
+                                <p class="wd-smaller-margins wd-smaller-text text-muted">123K Tweets</p>
+                            </div>
+                            <img src="../assets/jQuery.png" class="rounded-2 wd-image">
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex flex-row justify-content-between align-items-start">
+                            <!-- Content -->
+                            <div>
+                                <p class="wd-smaller-margins text-muted">Web Development</p>
+                                <p class="fw-bold wd-smaller-margins">
+                                    NodeJS
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="text-muted fw-light"> - 2h</span>
+                                </p>
+                                <p class="wd-smaller-margins wd-smaller-text text-muted">123K Tweets</p>
+                            </div>
+                            <img src="../assets/node.png" class="rounded-2 wd-image">
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                </div>
+            </div>
+
+            <!-- Who to follow -->
+            <div class="col-lg-4 col-xl-4 col-xxl-4 d-none d-lg-block">
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="fw-bold">Who to follow</span</li>
+                    <!-- Item 1 -->
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <!-- Image -->
+                                <img class="wd-post-image rounded-circle" src="../assets/java.png" />
+                                <!-- Text -->
+                                <div>
+                                    <p class="fw-bold wd-smaller-margins">Java</p>
+                                    <span class="wd-smaller-margins">@Java</span>
+            </div>
+        </div>
+        <!-- Button -->
+        <button class="btn btn-primary rounded-pill btn-sm">
+                                Follow
+                            </button>
     </div>
-
-    <hr class="wd-divider " />
-
-    <!-- first two suggested topics -->
-    <div class="wd-suggested-topic ">
-      <p>Trending in Science</p>
-      <p class="wd-suggested-title ">Starship</p>
-      <p>55.5K Tuits</p>
+    </li>
+    <!-- Item 2 -->
+    <li class="list-group-item">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-start align-items-center">
+                <!-- Image -->
+                <img class="wd-post-image rounded-circle" src="../assets/rspace.avif" />
+                <!-- Text -->
+                <div>
+                    <p class="fw-bold wd-smaller-margins">
+                        Relativity Space
+                    </p>
+                    <span class="wd-smaller-margins">@relativityspace</span>
+                </div>
+            </div>
+            <!-- Button -->
+            <button class="btn btn-primary rounded-pill btn-sm">
+                  Follow
+                </button>
+        </div>
+    </li>
+    <!-- Item 3 -->
+    <li class="list-group-item">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-start align-items-center">
+                <!-- Image -->
+                <img class="wd-post-image rounded-circle" src="../assets/vgalactic.svg" />
+                <!-- Text -->
+                <div>
+                    <p class="fw-bold wd-smaller-margins">
+                        Virgin Galactic
+                    </p>
+                    <span class="wd-smaller-margins">@virgingalactic</span>
+                </div>
+            </div>
+            <!-- Button -->
+            <button class="btn btn-primary rounded-pill btn-sm">
+                  Follow
+                </button>
+        </div>
+    </li>
+    <!-- Item 4 -->
+    <li class="list-group-item">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-start align-items-center">
+                <!-- Image -->
+                <img class="wd-post-image rounded-circle" src="../assets/nasa.png" />
+                <!-- Text -->
+                <div>
+                    <p class="wd-smaller-margins fw-bold">NASA</p>
+                    <span class="wd-smaller-margins">@NASA</span>
+                </div>
+            </div>
+            <!-- Button -->
+            <button class="btn btn-primary rounded-pill btn-sm">
+                  Follow
+                </button>
+        </div>
+    </li>
+    <!-- Item 2 -->
+    <li class="list-group-item">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-start align-items-center">
+                <!-- Image -->
+                <img class="wd-post-image rounded-circle" src="../assets/tesla.webp" />
+                <!-- Text -->
+                <div>
+                    <p class="wd-smaller-margins fw-bold">Tesla</p>
+                    <span class="wd-smaller-margins">@tesla</span>
+                </div>
+            </div>
+            <!-- Button -->
+            <button class="btn btn-primary rounded-pill btn-sm">
+                  Follow
+                </button>
+        </div>
+    </li>
+    </ul>
+    <!-- item 2 -->
+    <!-- Item 1 -->
     </div>
-    <hr class="wd-divider " />
-
-    <div class="wd-suggested-topic ">
-      <p>Sports · Trending</p>
-      <p class="wd-suggested-title ">Joe Rogan</p>
-      <p>5,218 Tuits</p>
     </div>
-    <hr class="wd-divider " />
-
-    <!-- Auther and Icon posts-->
-    <div class="wd-suggested-post wd-container ">
-      <div class="wd-flex-left ">
-        <p>The New York Times</p>
-        <p class="wd-suggested-text ">
-          CNN's Cuomo conundrum: A star anchor with a brother in trouble
-        </p>
-      </div>
-      <div class="wd-flex-right ">
-        <img class="wd-post-image " src="../assets/nyt-cuomo.webp " />
-      </div>
     </div>
-    <hr class="wd-divider " />
+</body>
 
-    <!-- Suggested post w/ topic + image -->
-    <div class="wd-suggested-topic wd-container ">
-      <div class="wd-flex-left ">
-        <p>COVID-19 · LIVE</p>
-        <p class="wd-suggested-text ">
-          COVID-19: News and updates for Massachusetts
-        </p>
-      </div>
-      <div class="wd-flex-right ">
-        <img class="wd-post-image " src="../assets/ma-health.webp " />
-      </div>
-    </div>
-    <hr class="wd-divider " />
-
-    <!-- Back to Suggested post -->
-
-    <div class="wd-suggested-post wd-container ">
-      <div class="wd-flex-left ">
-        <p>Bloomberg Opinion</p>
-        <p class="wd-suggested-text ">
-          Thinking about getting a booster? Read this first.
-        </p>
-      </div>
-      <div class="wd-flex-right ">
-        <img class="wd-post-image " src="../assets/booster-bloom.jpeg " />
-      </div>
-    </div>
-    <hr class="wd-divider " />
-
-    <!-- last two suggested topic -->
-    <div class="wd-suggested-topic ">
-      <p>Trending in United States</p>
-      <p class="wd-suggested-title ">Wonder Bread</p>
-      <p>1,259 Tuits</p>
-    </div>
-    <hr class="wd-divider " />
-
-    <!-- One more post w/ topic -->
-    <div class="wd-suggested-topic wd-container ">
-      <div class="wd-flex-right ">
-        <p>Book Release · LIVE</p>
-        <p class="wd-suggested-text ">
-          Brandon Sanderson: Anticipated Mistborn sequel dropping soon
-        </p>
-      </div>
-      <div class="wd-flex-right ">
-        <img class="wd-post-image " src="../assets/mistborn.jpeg " />
-      </div>
-    </div>
-  </body>
 </html>
