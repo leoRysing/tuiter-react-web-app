@@ -57,6 +57,11 @@
   top: -47px;
 }
 
+.wd-back-button {
+  margin-bottom: 12px;
+}
+
+
 .wd-setting-icon {
   margin-left: 16px;
   color: rgb(13, 110, 253);
