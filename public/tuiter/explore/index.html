@@ -3,36 +3,44 @@
 
 <head>
     <!-- this is the head -->
-    <title>React App - Home Page</title>
     <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Explore Screen</title>
+
 </head>
 
 <body>
     <!-- Stuff -->
+    <div class="container wd-above-margin" id="wd-explore"></div>
+    <script src="index.js" type="module"></script>
+
+<!--
     <div class="container wd-above-margin">
         <div class="wd-back-button">
             <a href="../navigation.html">Back</a>
         </div>
         <div class="row">
-            <!-- Navi -->
+
             <div class="col-2 - col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2">
                 <div class="list-group">
-                    <!-- Tuitter -->
-                    <li class="list-group-item">
+
+                    <a class="list-group-item list-group-item-active" href="#">
                         <i class="fab fa-twitter"></i>
-                    </li>
-                    <!-- Home -->
-                    <li class="list-group-item">
+                    </a>
+                    <a class="list-group-item list-group-item-active" href="#" >
                         <div class="d-flex flex-row justify-content-start align-items-center">
                             <i class="fa fa-home wd-icons"></i>
                             <span class="d-none d-xl-block">
                             Home
                         </span>
                         </div>
-                    </li>
-                    <!-- Explore -->
+                    </a>
+
                     <li class="list-group-item active">
                         <div class="d-flex flex-row justify-content-start align-items-center">
                             <i class="fa fa-hashtag wd-icons"></i>
@@ -41,60 +49,60 @@
                             </span>
                         </div>
                     </li>
-                    <!-- Notifications -->
-                    <li class="list-group-item">
+
+                    <a class="list-group-item list-group-item-active" href="#" >
                         <div class="d-flex flex-row justify-content-start align-items-center">
                             <i class="fa fa-bell wd-icons"></i>
                             <span class="d-none d-xl-block">
                                 Notifications
                             </span>
                         </div>
-                    </li>
-                    <!-- Messages -->
-                    <li class="list-group-item">
+                    </a>
+
+                    <a class="list-group-item list-group-item-active" href="#" >
                         <div class="d-flex flex-row justify-content-start align-items-center">
                             <i class="fa fa-envelope wd-icons"></i>
                             <span class="d-none d-xl-block">
                                 Messages
                             </span>
                         </div>
-                    </li>
-                    <!-- Bookmarks -->
-                    <li class="list-group-item">
+                    </a>
+
+                    <a class="list-group-item list-group-item-active" href="#" >
                         <div class="d-flex flex-row justify-content-start align-items-center">
                             <i class="fa fa-bookmark wd-icons"></i>
                             <span class="d-none d-xl-block">
                                 Bookmarks
                             </span>
                         </div>
-                    </li>
-                    <!-- Lists -->
-                    <li class="list-group-item">
+                    </a>
+
+                    <a class="list-group-item list-group-item-active" href="#" >
                         <div class="d-flex flex-row justify-content-start align-items-center">
                             <i class="fa fa-list wd-icons"></i>
                             <span class="d-none d-xl-block">
                                 Lists
                             </span>
                         </div>
-                    </li>
-                    <!-- Profile -->
-                    <li class="list-group-item">
+                    </a>
+
+                    <a class="list-group-item list-group-item-active" href="#" >
                         <div class="d-flex flex-row justify-content-start align-items-center">
                             <i class="fa fa-user wd-icons"></i>
                             <span class="d-none d-xl-block">
                                 Profile
                             </span>
                         </div>
-                    </li>
-                    <!-- More -->
-                    <li class="list-group-item">
+                    </a>
+
+                    <a class="list-group-item list-group-item-active" href="#" >
                         <div class="d-flex flex-row justify-content-start align-items-center">
                             <i class="fa fa-ellipsis-h wd-icons"></i>
                             <span class="d-none d-xl-block">
                                 More
                             </span>
                         </div>
-                    </li>
+                    </a>
                 </div>
                 <div class="d-grid">
                     <button type="button" class="btn btn-primary rounded-pill wd-button-top">
@@ -103,7 +111,7 @@
                 </div>
             </div>
 
-            <!-- Explore Section -->
+
             <div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
                 <div class="d-flex flex-row justify-content-start align-items-center mb-3">
                     <form class="flex-fill">
@@ -115,7 +123,7 @@
                     <i class="fa fa-gear fa-xl wd-setting-icon"></i>
                 </div>
 
-                <!-- Tabs -->
+
                 <ul class="nav nav-tabs mb-1">
                     <li class="nav-item">
                         <a class="nav-link active">For You</a>
@@ -139,7 +147,7 @@
                 <ul class="list-group wd-content-list">
                     <li class="list-group-item rounded-0">
                         <div class="d-flex flex-row justify-content-between align-items-start">
-                            <!-- Content -->
+
                             <div>
                                 <p class="wd-smaller-margins text-muted">Web Development</p>
                                 <p class="fw-bold wd-smaller-margins">
@@ -155,7 +163,7 @@
                     </li>
                     <li class="list-group-item">
                         <div class="d-flex flex-row justify-content-between align-items-start">
-                            <!-- Content -->
+
                             <div>
                                 <p class="fw-bold wd-smaller-margins">
                                     JavaScript
@@ -173,7 +181,7 @@
                     </li>
                     <li class="list-group-item">
                         <div class="d-flex flex-row justify-content-between align-items-start">
-                            <!-- Content -->
+
                             <div>
                                 <p class="wd-smaller-margins text-muted">Web Development</p>
                                 <p class="fw-bold wd-smaller-margins">
@@ -186,7 +194,7 @@
                     </li>
                     <li class="list-group-item">
                         <div class="d-flex flex-row justify-content-between align-items-start">
-                            <!-- Content -->
+
                             <div>
                                 <p class="wd-smaller-margins text-muted">Web Development</p>
                                 <p class="fw-bold wd-smaller-margins">
@@ -204,17 +212,17 @@
                 </div>
             </div>
 
-            <!-- Who to follow -->
+
             <div class="col-lg-4 col-xl-4 col-xxl-4 d-none d-lg-block">
                 <ul class="list-group">
                     <li class="list-group-item"><span class="fw-bold">Who to follow</span</li>
-                    <!-- Item 1 -->
+
                     <li class="list-group-item">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="d-flex justify-content-start align-items-center">
-                                <!-- Image -->
+
                                 <img class="wd-post-image rounded-circle" src="../assets/java.png" />
-                                <!-- Text -->
+
                                 <div>
                                     <p class="fw-bold wd-smaller-margins">
                                         Java
@@ -223,40 +231,40 @@
                                     <span class="wd-smaller-margins">@Java</span>
             </div>
         </div>
-        <!-- Button -->
+
         <button class="btn btn-primary rounded-pill btn-sm">
                                 Follow
                             </button>
     </div>
     </li>
-    <!-- Item 2 -->
+
     <li class="list-group-item">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex justify-content-start align-items-center">
-                <!-- Image -->
+
                 <img class="wd-post-image rounded-circle" src="../assets/rspace.avif" />
-                <!-- Text -->
+
                 <div>
                     <p class="fw-bold wd-smaller-margins">
                         Relativity Space
-                        <i class="fas fa-check-circle "></i>
+                        <i class="fas fa-check-circle wd-check-icon"></i>
                     </p>
                     <span class="wd-smaller-margins">@relativityspace</span>
                 </div>
             </div>
-            <!-- Button -->
+\
             <button class="btn btn-primary rounded-pill btn-sm">
                   Follow
                 </button>
         </div>
     </li>
-    <!-- Item 3 -->
+
     <li class="list-group-item">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex justify-content-start align-items-center">
-                <!-- Image -->
+
                 <img class="wd-post-image rounded-circle" src="../assets/vgalactic.svg" />
-                <!-- Text -->
+
                 <div>
                     <p class="fw-bold wd-smaller-margins">
                         Virgin Galactic
@@ -265,19 +273,19 @@
                     <span class="wd-smaller-margins">@virgingalactic</span>
                 </div>
             </div>
-            <!-- Button -->
+
             <button class="btn btn-primary rounded-pill btn-sm">
                   Follow
                 </button>
         </div>
     </li>
-    <!-- Item 4 -->
+
     <li class="list-group-item">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex justify-content-start align-items-center">
-                <!-- Image -->
+
                 <img class="wd-post-image rounded-circle" src="../assets/nasa.png" />
-                <!-- Text -->
+
                 <div>
                     <p class="wd-smaller-margins fw-bold">
                         NASA
@@ -286,19 +294,19 @@
                     <span class="wd-smaller-margins">@NASA</span>
                 </div>
             </div>
-            <!-- Button -->
+
             <button class="btn btn-primary rounded-pill btn-sm">
                   Follow
                 </button>
         </div>
     </li>
-    <!-- Item 2 -->
+
     <li class="list-group-item">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex justify-content-start align-items-center">
-                <!-- Image -->
+
                 <img class="wd-post-image rounded-circle" src="../assets/tesla.webp" />
-                <!-- Text -->
+
                 <div>
                     <p class="wd-smaller-margins fw-bold">
                         Tesla
@@ -307,18 +315,18 @@
                     <span class="wd-smaller-margins">@tesla</span>
                 </div>
             </div>
-            <!-- Button -->
+
             <button class="btn btn-primary rounded-pill btn-sm">
                   Follow
                 </button>
         </div>
     </li>
     </ul>
-    <!-- item 2 -->
-    <!-- Item 1 -->
+
     </div>
     </div>
     </div>
+-->
 </body>
 
 </html>

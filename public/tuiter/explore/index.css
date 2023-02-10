@@ -3,10 +3,10 @@
 }
 
 .wd-post-image {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
-  margin-right: 12px;
+  margin-right: 8px;
 }
 
 .wd-smaller-margins {
@@ -43,6 +43,12 @@
   position: absolute;
   left: 0.75rem;
   top: calc(30%);
+}
+
+.wd-check-icon {
+  position: absolute;
+  top:calc(20%);
+  left: 12.25rem;
 }
 
 .wd-image {
