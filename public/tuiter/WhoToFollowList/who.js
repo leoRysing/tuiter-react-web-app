@@ -1,26 +1,26 @@
 export default [
   {
-    avatarIcon: '../assets/java.png',
+    avatarIcon: 'java.png',
     userName: 'Java',
     handle: 'java',
   },
   {
-    avatarIcon: '../assets/rspace.avif',
+    avatarIcon: 'rspace.avif',
     userName: 'Relative Space',
     handle: 'relativespace',
   },
   {
-    avatarIcon: '../assets/vgalactic.svg',
+    avatarIcon: 'vgalactic.svg',
     userName: 'Virgin Galactic',
     handle: 'virgingalactic',
   },
   {
-    avatarIcon: '../assets/nasa.png',
+    avatarIcon: 'nasa.png',
     userName: 'NASA',
     handle: 'NASA',
   },
   {
-    avatarIcon: '../assets/tesla.webp',
+    avatarIcon: 'tesla.webp',
     userName: 'Tesla',
     handle: 'tesla',
   }

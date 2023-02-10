@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap index.js v5.2.3 (https://getbootstrap.com/)
+  * Bootstrap WhoToFollowList.js v5.2.3 (https://getbootstrap.com/)
   * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
@@ -11,7 +11,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.2.3): util/index.js
+   * Bootstrap (v5.2.3): util/WhoToFollowList.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -348,4 +348,4 @@
   Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: 'Module' } });
 
 }));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=WhoToFollowList.js.map
