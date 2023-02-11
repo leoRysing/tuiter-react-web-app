@@ -4,7 +4,7 @@ const WhoToFollowListItem = (who) => {
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex justify-content-start align-items-center">
 
-            <img class="wd-post-image rounded-circle" src=${who.avatarIcon}/>
+            <img class="wd-post-image rounded-circle" src=${who.avatarIcon}>
 
             <div>
               <p class="wd-smaller-margins fw-bold">

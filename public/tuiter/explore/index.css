@@ -35,7 +35,7 @@
 .wd-display {
   color: white;
   position: relative;
-  top: -40px;
+  top: -50px;
   left: 4px;
 }
 
@@ -70,9 +70,14 @@
 
 .wd-setting-icon {
   margin-left: 16px;
-  color: rgb(13, 110, 253);
+  color: #2a9fd6;
 }
 
 .wd-smaller-text {
   font-size: 14px;
+}
+
+.wd-flush-with-picture {
+  position: relative;
+  top: -48px;
 }
