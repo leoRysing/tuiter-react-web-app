@@ -29,7 +29,7 @@ const ExploreComponent = () => {
           <a class="nav-link">Entertainment</a>
         </li>
     </ul>
-    <img src="../assets/starship.jpeg" class="w-100">
+    <img src="../../images/starship.jpeg" class="w-100">
     <h3 class="wd-display fw-bold">SpaceX's Starship</h3>
     ${PostSummaryList()}
 
