@@ -20,10 +20,6 @@ const PostUserAndTime = (user, time) => {
   `)
 }
 
-const PostTweets = (tweets) => {
-  return(`<p class="text-muted fw-lightwd-smaller-margins">${tweets} Tweets</p>`)
-}
-
 const PostSummaryItem = (post) => {
   return(`
   <li class="list-group-item">
@@ -35,7 +31,6 @@ const PostSummaryItem = (post) => {
         <p class="fw-bold wd-smaller-margins wd-smaller-text">
           ${post.title}
         </p>
-        ${PostTweets(post.tweets)}
       </div>
       <img src=${post.image} class="rounded-2 wd-image">
     </div>
