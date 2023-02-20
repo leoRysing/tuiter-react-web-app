@@ -3,11 +3,17 @@
 
 <head>
   <link href="./index.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $("h1#hi").remove()
+  </script>
 </head>
 
 <body>
+  <h1 class="hello">Hello World 1</h1>
+  <h1 class="hello" id="hi">Hello World 2</h1>
   <h2>Embedded script tag</h2>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <script src="index.js"></script>
 
   <h2>Writing to the DOM</h2>
@@ -16,6 +22,7 @@
   </script>
 
   <h2>Calculating an HTML string</h2>
+  <h1 id="hello">Hello </h1>
   <script>
     // 2.8.1 ---------------
     const renderTodos = (todos) => `

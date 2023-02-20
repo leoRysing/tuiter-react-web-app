@@ -9,12 +9,12 @@
     "_id": 234,
     "userName": "Tesla",
     "handle": "tesla",
-    "avatarIcon": "tesla.png"
+    "avatarIcon": "tesla.webp"
   },
   {
     "_id": 345,
     "userName": "SpaceX",
     "handle": "SpaceX",
-    "avatarIcon": "spacex.png"
+    "avatarIcon": "spacex.jpg"
   }
 ]
