@@ -1,0 +1,25 @@
+.tuit-picture {
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.tuit-stat {
+  margin-right: 45px;
+}
+
+.tuit-liked {
+  color: red;
+}
+
+.tuit-icon {
+  margin-right: 8px;
+}
+
+.tuit-bold {
+  font-weight: bold;
+}
+
+.tuit-verified {
+  color: blue;
+  margin-right: 6px;
+}

@@ -3,7 +3,8 @@ import items from "./sidebar.js";
 import NavigationItem from "./navigation-item";
 const NavigationSidebar = (
     {
-      active = 'explore'
+      active = 'explore',
+      setter
     }
 ) => {
 
@@ -11,14 +12,16 @@ const NavigationSidebar = (
     return {
       "active": `${active === item.title.toLowerCase()?true:false}`,
       "iconString": `${item.iconString}`,
-      "title": `${item.title}`
+      "title": `${item.title}`,
+      "link": `${item.link}`
       };
     }
   );
   return (
       <div className="list-group">
         <a className="list-group-item list-group-item-active" href="#">
-          <div class={"d-flex flex-row flex-start"}>
+          <div className
+                   ={"d-flex flex-row flex-start"}>
             <i className="bi bi-twitter wd-icons"></i>
             <span className={"d-none d-xl-block"}>Tuiter</span>
           </div>
@@ -26,8 +29,7 @@ const NavigationSidebar = (
         {
           itemActive.map(item =>
               <div>
-                {console.log(item)}
-                <NavigationItem key={item._id} navItem={item} />
+                <NavigationItem key={item._id} navItem={item} setter={setter} />
               </div>)
         }
       </div>
