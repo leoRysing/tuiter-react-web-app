@@ -1,4 +1,5 @@
 import React from "react";
+import "../tuits/tuits.css";
 const WhoToFollowListItem = (
     {
       who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png' }
@@ -13,7 +14,7 @@ const WhoToFollowListItem = (
           <div className="col-8">
             <div className="fw-bold">
               {who.userName}
-              <i className={"bi bi-check-circle-fill wd-checkmark"}></i>
+              <i className={"bi bi-check-circle-fill tuit-verified"}></i>
             </div>
             <div>
               @{who.handle}
