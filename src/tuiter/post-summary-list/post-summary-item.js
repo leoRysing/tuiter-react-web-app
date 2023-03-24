@@ -17,7 +17,7 @@ const PostSummaryItem = (
           <div className="col-10">
             <div>
               {post.userName}
-              <i className={"bi bi-check-circle-fill tuit-verified"}></i> . {post.time}
+              <i className={"bi bi-check-circle-fill tuit-verified"}></i>. {post.time}
             </div>
             <div className="fw-bolder">{post.topic}</div>
             <div>{post.tuit}</div>
