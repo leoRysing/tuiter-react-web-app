@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import tuits from '../data/tuits.json';
-import {findTuitsThunk, deleteTuitThunk, createTuitThunk} from "../../services/tuit-thunks";
+import {findTuitsThunk, deleteTuitThunk, createTuitThunk, updateTuitThunk} from "../../services/tuit-thunks";
 
 const currentUser = {
   "userName": "NASA",
@@ -68,6 +68,15 @@ const tuitsSlice = createSlice({
           state.loading = false;
           state.tuits.push(payload);
         },
+    [updateTuitThunk.fulfilled]:
+        (state, { payload }) => {
+          state.loading = false;
+          const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id);
+          state.tuits[tuitNdx] = {
+            ...state.tuits[tuitNdx],
+            ...payload
+          };
+        }
   }
 });
 

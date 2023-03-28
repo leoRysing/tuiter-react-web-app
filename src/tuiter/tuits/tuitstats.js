@@ -5,21 +5,25 @@ import {useDispatch} from "react-redux";
 
 
 const TuitStat = ({ tuit }) => {
-  const [liked, setLiked] = useState(tuit.liked);
-  const onClickLike = () => {
-    setLiked(!liked);
-  }
   const dispatch = useDispatch();
+  const onClickLike = () => {
+    const liked = !tuit.liked;
+    console.log(liked);
+    const likes = liked ? tuit.likes + 1 : tuit.likes - 1;
+    console.log(likes);
+    dispatch(updateTuitThunk({
+      ...tuit,
+      likes: likes,
+      liked: liked,
+    }));
+  };
 
   return (
       <div className={"row w-100"}>
         <span className={"col-3"}><i className={"bi bi-chat tuit-icon"}></i> {tuit.replies} </span>
         <span className={"col-3"}><i className={"bi bi-arrow-repeat tuit-icon"}></i> {tuit.retuits}</span>
         <span className={"col-3"}>
-          <i onClick={() => dispatch(updateTuitThunk({
-            ...tuit,
-            likes: tuit.likes + 1
-          }))} className="bi bi-heart-fill me-2 text-danger"></i>
+          <i onClick={onClickLike} className="bi bi-heart-fill me-2 text-danger"></i>
           {tuit.likes}
         </span>
         <i className={"bi bi-share col-3"}></i>
