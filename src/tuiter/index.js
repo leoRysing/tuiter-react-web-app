@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import ExploreComponent from "./explore";
 import HomeComponent from "./home";
 import NavigationSidebar from "./navigation-sidebar";
@@ -11,11 +11,13 @@ import tuitsReducer from "./reducers/tuits-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 
 function Tuiter() {
   const [active, setActive] = useState("home");
+
   return (
       <Provider store={store}>
         <div>
