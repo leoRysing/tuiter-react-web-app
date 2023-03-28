@@ -23,7 +23,7 @@ const TuitStat = ({ tuit }) => {
         <span className={"col-3"}><i className={"bi bi-chat tuit-icon"}></i> {tuit.replies} </span>
         <span className={"col-3"}><i className={"bi bi-arrow-repeat tuit-icon"}></i> {tuit.retuits}</span>
         <span className={"col-3"}>
-          <i onClick={onClickLike} className="bi bi-heart-fill me-2 text-danger"></i>
+          <i onClick={onClickLike} className={`bi ${tuit.liked ? " bi-heart-fill text-danger" : "bi-heart"} me-2`}></i>
           {tuit.likes}
         </span>
         <i className={"bi bi-share col-3"}></i>
