@@ -1,5 +1,7 @@
 import React from "react";
 import "../tuits/tuits.css";
+import "./post-summary.css";
+
 const PostSummaryItem = (
     {
       post = {
@@ -23,7 +25,10 @@ const PostSummaryItem = (
             <div>{post.tuit}</div>
           </div>
           <div className="col-2">
-            <img width={70} height={70} className="float-end rounded-3" src={`/images/${post.image}`} alt={""}/>
+            <img width={70} height={70}
+                 className="float-end rounded-3 wd-post-picture"
+                 src={`/images/${post.image}`}
+                 alt={""}/>
           </div>
         </div>
       </li>
